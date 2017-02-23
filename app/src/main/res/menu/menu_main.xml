@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.harman.r1MQTTapp.MainActivity">
+    <item
+        android:id="@+id/action_restartClient"
+        android:orderInCategory="100"
+        android:title="@string/action_restartClient"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Info"
+        android:orderInCategory="100"
+        android:title="@string/action_Info"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_Mystery"
+        android:orderInCategory="100"
+        android:title="@string/action_Mystery"
+        app:showAsAction="never" />
+</menu>

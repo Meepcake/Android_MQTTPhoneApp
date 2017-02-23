@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.harman.r1mqtt.MainActivity"
+    android:background="@drawable/blackbackground3"
+    android:id="@+id/transmit_RelativeLayout">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/pacifica"
+        android:scaleType="centerInside"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/pacifica_image" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnLock"
+        android:src="@drawable/lockbutton"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/lock"
+        android:layout_above="@+id/btnRemoteStart"
+        android:layout_toEndOf="@+id/stringHornsLights"
+        android:layout_marginStart="39dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnRemoteStart"
+        android:src="@drawable/startbutton"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/btnUnlock"
+        android:layout_alignStart="@+id/btnUnlock"
+        android:contentDescription="@string/start" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnUnlock"
+        android:src="@drawable/unlockbutton"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:layout_gravity="right"
+        android:layout_marginTop="27dp"
+        android:contentDescription="@string/unlock"
+        android:layout_below="@+id/imageView"
+        android:layout_toStartOf="@+id/stringHornsLights"
+        android:layout_marginEnd="44dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnRemoteStop"
+        android:src="@drawable/stopbutton"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:layout_alignTop="@+id/btnRemoteStart"
+        android:layout_alignStart="@+id/btnLock"
+        android:contentDescription="@string/stop" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnHornAndLights"
+        android:src="@drawable/horns"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/btnRemoteStop"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/horns" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/unlock_lock"
+        android:id="@+id/stringLockUnlock"
+        android:textSize="12sp"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:layout_above="@+id/btnRemoteStart"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/start_stop"
+        android:id="@+id/stringStartStop"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textSize="12sp"
+        android:textIsSelectable="true"
+        android:layout_above="@+id/btnHornAndLights"
+        android:layout_alignStart="@+id/btnHornAndLights"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/horns_amp_lights"
+        android:id="@+id/stringHornsLights"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textSize="12sp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/btnHornAndLights"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
